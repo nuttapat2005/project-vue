@@ -34,8 +34,31 @@ const routes = [
     name: 'golds',
     
     component: () => import( '../views/Api_golds.vue')
-  }
+  },
   
+
+  {
+    path: '/product_api',
+    name: 'product_api',
+    
+    component: () => import( '../views/Product_api.vue')
+  },
+
+  {
+    path: '/product_table',
+    name: 'product_table',
+    
+    component: () => import( '../views/Product_table.vue')
+  },
+
+
+  {
+    path: '/user',
+    name: 'user',
+    
+    component: () => import( '../views/Users.vue')
+  }
+
 ]
 
 const router = createRouter({
